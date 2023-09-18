@@ -21,5 +21,11 @@
 # reduced the code using parent class
 
 
-# for accessing to main i have to migrate it (creating database) using python manage.py migrate
+# for accessing to admin user i have to migrate it (creating database) using python manage.py migrate
 # python manage.py createsuperuser
+
+
+# django has user model. to access django user model import from django.contrib.auth.models import User
+# and field must be fieldName = models.ForeignKey(User)
+# CASECADE if the user deleted then post should delete as well but if post deleted then user will remain
+# python manage.py makemigrations is used when we add a model to database
