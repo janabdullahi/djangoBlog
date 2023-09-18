@@ -19,3 +19,7 @@
 #    return render(request, 'blog/home.html', context)
 # used if else for the title {% if %} {% else %} {% endif %}
 # reduced the code using parent class
+
+
+# for accessing to main i have to migrate it (creating database) using python manage.py migrate
+# python manage.py createsuperuser
