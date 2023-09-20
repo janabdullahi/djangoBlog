@@ -36,3 +36,4 @@
 # fieldset is used to set group of elements
 # A legend tag defines the caption or title for the <field set> tag, and it is the element's first child 
 # csrf_token is used to protect from attacks
+# cleaned_data returns a dictionary of validated form input fields and their values
