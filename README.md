@@ -29,3 +29,10 @@
 # and field must be fieldName = models.ForeignKey(User)
 # CASECADE if the user deleted then post should delete as well but if post deleted then user will remain
 # python manage.py makemigrations is used when we add a model to database
+
+# add user app for user registration and login
+# add it to installed app 'users.apps.UsersConfig'
+# the from would not work with csrf_token
+# fieldset is used to set group of elements
+# A legend tag defines the caption or title for the <field set> tag, and it is the element's first child 
+# csrf_token is used to protect from attacks
