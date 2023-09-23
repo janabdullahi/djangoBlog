@@ -37,3 +37,7 @@
 # A legend tag defines the caption or title for the <field set> tag, and it is the element's first child 
 # csrf_token is used to protect from attacks
 # cleaned_data returns a dictionary of validated form input fields and their values
+
+
+# ModelForm allows to create a form to work with specific database
+# enctype="multipart/form-data" is used to show profile properly
