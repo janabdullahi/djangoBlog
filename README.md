@@ -41,3 +41,7 @@
 
 # ModelForm allows to create a form to work with specific database
 # enctype="multipart/form-data" is used to show profile properly
+
+
+# when we pass a class name as a view then we have to add as_view() e.g. className.as_view()
+# and we need to use context_object_name beczuse its going to search for objects
