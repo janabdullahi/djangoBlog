@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Post
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 # Create your views here.
@@ -19,6 +19,15 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
 
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    model = Post
+    
+    def test_func(self):
+        post = self.get_object() # current post
+        if self.request.user == post.author: # if current user is post author
+            return True
+        return False
+    
 class PostCreateView(LoginRequiredMixin,CreateView):
     model = Post
     fields = ['title', 'content']
