@@ -45,3 +45,5 @@
 
 # when we pass a class name as a view then we have to add as_view() e.g. className.as_view()
 # and we need to use context_object_name beczuse its going to search for objects
+
+# get_object is taking the current post
